@@ -1,4 +1,4 @@
-The package for solving TBA equations will be uploaded soon...
+***The package for solving TBA equations will be uploaded soon***
 
 The attached article is a revised version of the following:
 
