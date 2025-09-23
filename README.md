@@ -39,6 +39,10 @@ Mathematically it has the following general form:
 
 <img width="424" height="39" alt="1c1h7fjcz5rhw" src="https://github.com/user-attachments/assets/1b7f294b-1846-493f-83d3-40cc90e8ce8b" />
 
+
+<img width="404" height="46" alt="tba_img1" src="https://github.com/user-attachments/assets/b0582616-90a7-4213-99a2-c404e9578242" />
+
+
 where $y_j(x)$, for $j=1,...,n$ are the dependent variables, $f_j(x)$ the non-homogeneous (or forcing) terms, $\varphi_{jk}(x)$ the integral kernels (typically combinations of hyperbolic functions), $c_{jk}$ some constants and $\sigma_{jk}=\pm 1$. Notice that the integral terms are always convolutions.
 
 Due to its quite involved form, the TBA cannot be solved analytically or symbolically through [DSolve](https://reference.wolfram.com/language/ref/DSolve), but requires a special numerical treatment.
@@ -50,6 +54,7 @@ The first argument of `ThermodynamicBetheAnsatzSolve` is a TBA equation or a lis
 `ThermodynamicBetheAnsatzSolve` accepts the following options:
 
 <img width="662" height="182" alt="1osrbzzgsz983" src="https://github.com/user-attachments/assets/0a65ffd9-4993-4910-aaff-a2588489b6ee" />
+<img width="686" height="198" alt="tba_img12" src="https://github.com/user-attachments/assets/d49f3b9e-62a2-47e3-bd5e-9812f6648e81" />
 
 
 In principle, the numeric grid to obtain the solution, should have infinite cutoff (or range) and resolution. It is possible to simulate this ideal behaviour by giving increasingly values to the options "GridCutoff" and "GridResolution".
@@ -71,12 +76,15 @@ Solve a single non-linear integral equation, known as the "Sinh-Gordon" Thermody
 
 
 <img width="422" height="36" alt="15l6ro1jorw2m" src="https://github.com/user-attachments/assets/a24a13f5-072a-498b-a61c-e789ec69fcb9" />
+<img width="442" height="49" alt="tba_img2" src="https://github.com/user-attachments/assets/71ad43d8-d48d-49b2-8f89-c9261b4946b2" />
+
 
 
 ```wl
 ThermodynamicBetheAnsatzSolve[tbaSHG /. r -> 0.1]
 ```
 <img width="414" height="42" alt="019oiigz8xwmn" src="https://github.com/user-attachments/assets/dde183c6-9149-4f91-8c94-f5ba14d9a882" />
+<img width="426" height="55" alt="tba_img3" src="https://github.com/user-attachments/assets/e3c2ed1c-5f59-4343-934f-db16e015572f" />
 
 
 Plot the solution:
@@ -88,6 +96,7 @@ In[]:= Plot[y[x] /. %, {x, -5, 5}]
 
 <img width="130" height="81" alt="1g5zdjy2uq6wi" src="https://github.com/user-attachments/assets/aedd8cf4-e0d4-4ba5-b7f1-2a1c5cdd8318" />
 
+<img width="142" height="92" alt="tba_img4" src="https://github.com/user-attachments/assets/c9fa5883-875d-4f8a-9675-a49c05d1e489" />
 
 
 
