@@ -63,3 +63,37 @@ By default, each numeric iteration is stored in the memory. This is not really n
 For some special TBAs, further boundary conditions, besides the forcing terms, are required, either for specifying some further parameters or to improve accuracy. These boundary conditions are mathematically derived as terms to subtract to the forcing term and to the convolution integrand. They can be specified through the option "BoundaryCondition" as a list of two elements, or as a list of lists, if the TBA has multiple equations with different boundary conditions.
 
 An "ansatz" is roughly translated as "educated guess." Alternates to the "thermodynamic" Bethe ansatz include algebraic, analytic, coordinate, functional and nested.
+
+
+#### Basic Examples
+
+Solve a single non-linear integral equation, known as the "Sinh-Gordon" Thermodynamic Bethe Ansatz (TBA):
+
+![15l6ro1jorw2m](img/15l6ro1jorw2m.png)
+
+<img width="422" height="36" alt="15l6ro1jorw2m" src="https://github.com/user-attachments/assets/a24a13f5-072a-498b-a61c-e789ec69fcb9" />
+
+
+```wl
+ThermodynamicBetheAnsatzSolve[tbaSHG /. r -> 0.1]
+```
+<img width="414" height="42" alt="019oiigz8xwmn" src="https://github.com/user-attachments/assets/dde183c6-9149-4f91-8c94-f5ba14d9a882" />
+
+![019oiigz8xwmn](img/019oiigz8xwmn.png)
+
+Plot the solution:
+
+```wl
+In[]:= Plot[y[x] /. %, {x, -5, 5}]
+```
+
+![1g5zdjy2uq6wi](img/1g5zdjy2uq6wi.png)
+
+<img width="130" height="81" alt="1g5zdjy2uq6wi" src="https://github.com/user-attachments/assets/aedd8cf4-e0d4-4ba5-b7f1-2a1c5cdd8318" />
+
+
+
+
+#### Full documentation
+
+Read the rest of the documentation on the [Wolfram Function Repostiroy](https://resources.wolframcloud.com/FunctionRepository/resources/ThermodynamicBetheAnsatzSolve/).
