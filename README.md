@@ -89,4 +89,4 @@ Plot[y[x] /. %, {x, -5, 5}]
 
 #### Full documentation
 
-Read the rest of the documentation on the [Wolfram Function Repostiroy](https://resources.wolframcloud.com/FunctionRepository/resources/ThermodynamicBetheAnsatzSolve/).
+Read the rest of the documentation on the [Wolfram Function Repository](https://resources.wolframcloud.com/FunctionRepository/resources/ThermodynamicBetheAnsatzSolve/).
