@@ -37,10 +37,15 @@ The Thermodynamic Bethe Ansatz (TBA) is a type of nonlinear integral equation st
 
 Mathematically it has the following general form:
 
-<img width="424" height="39" alt="1c1h7fjcz5rhw" src="https://github.com/user-attachments/assets/1b7f294b-1846-493f-83d3-40cc90e8ce8b" />,
+<img width="424" height="39" alt="1c1h7fjcz5rhw" src="https://github.com/user-attachments/assets/1b7f294b-1846-493f-83d3-40cc90e8ce8b" />
 
-where <img width="33" height="17" alt="1nkdymr8ucgh6" src="https://github.com/user-attachments/assets/890c8ddb-e24e-4379-a27c-02caac9d3c38" />
- $![1nkdymr8ucgh6](img/1nkdymr8ucgh6.png)$, for $![1x7dftwc32142](img/1x7dftwc32142.png)$ are the dependent variables, $f_j(x)$ $![1qejis9dmn0ec](img/1qejis9dmn0ec.png)$ the non-homogeneous (or forcing) terms, $![0k3vwbth3q578](img/0k3vwbth3q578.png)$ the integral kernels (typically combinations of hyperbolic functions), $![1c7wntyl793lx](img/1c7wntyl793lx.png)$ some constants and $![1m4wg7vh4r5z1](img/1m4wg7vh4r5z1.png)$. Notice that the integral terms are always convolutions.
+
+$y_j(x) = f_j(x) + \sum_{k=1}^n \int_{-\infty}^\infty \
+\varphi_{j,k}(x-t) \log [1 + c_ {j,k}\exp\{-\sigma_{j,k}y_k (t)\}]\, \
+dt$
+,
+
+where $y_j(x)$, for $j=1,...,n$ are the dependent variables, $f_j(x)$ $![1qejis9dmn0ec](img/1qejis9dmn0ec.png)$ the non-homogeneous (or forcing) terms, $![0k3vwbth3q578](img/0k3vwbth3q578.png)$ the integral kernels (typically combinations of hyperbolic functions), $![1c7wntyl793lx](img/1c7wntyl793lx.png)$ some constants and $![1m4wg7vh4r5z1](img/1m4wg7vh4r5z1.png)$. Notice that the integral terms are always convolutions.
 
 Due to its quite involved form, the TBA cannot be solved analytically or symbolically through [DSolve](https://reference.wolfram.com/language/ref/DSolve), but requires a special numerical treatment.
 
