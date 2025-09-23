@@ -31,7 +31,7 @@ solves a system of TBA equations.
 
 solves a system of TBA equations and returns the specified solutions values.
 
-#### Details & Options![0h3ffn7gunls6](img/0h3ffn7gunls6.png)
+#### Details & Options
 
 The Thermodynamic Bethe Ansatz (TBA) is a type of nonlinear integral equation studied extensively, in recent decades, in various branches of theoretical physics (especially in statistical field theory, quantum integrability and gauge theories).
 
