@@ -36,19 +36,20 @@ solves a system of TBA equations and returns the specified solutions values.
 The Thermodynamic Bethe Ansatz (TBA) is a type of nonlinear integral equation studied extensively, in recent decades, in various branches of theoretical physics (especially in statistical field theory, quantum integrability and gauge theories).
 
 Mathematically it has the following general form:
+
 <img width="424" height="39" alt="1c1h7fjcz5rhw" src="https://github.com/user-attachments/assets/1b7f294b-1846-493f-83d3-40cc90e8ce8b" />,
+
 where <img width="33" height="17" alt="1nkdymr8ucgh6" src="https://github.com/user-attachments/assets/890c8ddb-e24e-4379-a27c-02caac9d3c38" />
- $![1nkdymr8ucgh6](img/1nkdymr8ucgh6.png)$, for $![1x7dftwc32142](img/1x7dftwc32142.png)$ are the dependent variables, $![1qejis9dmn0ec](img/1qejis9dmn0ec.png)$ the non-homogeneous (or forcing) terms, $![0k3vwbth3q578](img/0k3vwbth3q578.png)$ the integral kernels (typically combinations of hyperbolic functions), $![1c7wntyl793lx](img/1c7wntyl793lx.png)$ some constants and $![1m4wg7vh4r5z1](img/1m4wg7vh4r5z1.png)$. Notice that the integral terms are always convolutions.
+ $![1nkdymr8ucgh6](img/1nkdymr8ucgh6.png)$, for $![1x7dftwc32142](img/1x7dftwc32142.png)$ are the dependent variables, $f_j(x)$ $![1qejis9dmn0ec](img/1qejis9dmn0ec.png)$ the non-homogeneous (or forcing) terms, $![0k3vwbth3q578](img/0k3vwbth3q578.png)$ the integral kernels (typically combinations of hyperbolic functions), $![1c7wntyl793lx](img/1c7wntyl793lx.png)$ some constants and $![1m4wg7vh4r5z1](img/1m4wg7vh4r5z1.png)$. Notice that the integral terms are always convolutions.
 
 Due to its quite involved form, the TBA cannot be solved analytically or symbolically through [DSolve](https://reference.wolfram.com/language/ref/DSolve), but requires a special numerical treatment.
 
 In particular, `ThermodynamicBetheAnsatzSolve` implements the method of successive approximations. In details, the solution is set first equal to the forcing terms, and then iterated in the equation until convergence is reached. Moreover, the convolutions are [Fourier](https://reference.wolfram.com/language/ref/Fourier)-transformed, then evaluated efficiently as products and transformed back through [InverseFourier](https://reference.wolfram.com/language/ref/InverseFourier). To do this, the domain is discretized on a uniform finite grid and finally the solution is returned as an [InterpolatingFunction](https://reference.wolfram.com/language/ref/InterpolatingFunction) object.
 
-The first argument of `ThermodynamicBetheAnsatzSolve` is a TBA equation or a list of them. Then the solution is returned as a list of ![0oloxagkegvvv](img/0oloxagkegvvv.png) expressions with an interpolating function solution for each dependent variable, in analogy with the output of [NDSolve](https://reference.wolfram.com/language/ref/NDSolve). The second argument, possibly empty, allows to return only the values of the solutions, in analogy with [NDSolveValue](https://reference.wolfram.com/language/ref/NDSolveValue).
+The first argument of `ThermodynamicBetheAnsatzSolve` is a TBA equation or a list of them. Then the solution is returned as a list of [Rule](https://reference.wolfram.com/language/ref/Rule) expressions with an interpolating function solution for each dependent variable, in analogy with the output of [NDSolve](https://reference.wolfram.com/language/ref/NDSolve). The second argument, possibly empty, allows to return only the values of the solutions, in analogy with [NDSolveValue](https://reference.wolfram.com/language/ref/NDSolveValue).
 
 `ThermodynamicBetheAnsatzSolve` accepts the following options:
 
-![1osrbzzgsz983](img/1osrbzzgsz983.png)
 <img width="662" height="182" alt="1osrbzzgsz983" src="https://github.com/user-attachments/assets/0a65ffd9-4993-4910-aaff-a2588489b6ee" />
 
 
