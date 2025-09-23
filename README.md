@@ -75,7 +75,7 @@ Solve a single non-linear integral equation, known as the "Sinh-Gordon" Thermody
 
 
 ```wl
-ThermodynamicBetheAnsatzSolve[tbaSHG /. r -> 0.1]
+ResourceFunction["ThermodynamicBetheAnsatzSolve"][tbaSHG /. r -> 0.1]
 ```
 <img width="426" height="55" alt="tba_img3" src="https://github.com/user-attachments/assets/e3c2ed1c-5f59-4343-934f-db16e015572f" />
 
