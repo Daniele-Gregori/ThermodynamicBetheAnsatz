@@ -1,4 +1,4 @@
-A Wolfram resource function which automatically delivers the numerical solution of any integral equation of Thermodynamic Bethe Ansatz type.
+A Wolfram resource function which automatically delivers the numerical solution of any integral equation of Thermodynamic Bethe Ansatz class.
 
 It can be used to reproduce the results of academic papers such as the one attached, which is a revised version of:
 
