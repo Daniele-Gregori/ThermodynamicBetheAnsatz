@@ -13,31 +13,27 @@ Solve integral equations of Thermodynamic Bethe Ansatz type
 #### Usage
 
 <img width="246" height="19" alt="1fexgolzrtiy0" src="https://github.com/user-attachments/assets/f074be08-ffff-4e35-8279-04fad464e014" />
-![1fexgolzrtiy0](img/1fexgolzrtiy0.png)
-
-<img width="246" height="19" alt="1fexgolzrtiy0" src="https://github.com/user-attachments/assets/eed6aac1-4690-4840-88ae-042d43e108a4" />
+<img width="246" height="19" alt="1fexgolzrtiy0" src="https://github.com/user-attachments/assets/8db780ba-adf7-40f3-b319-6f0f8dd65410" />
 
 
 solves a TBA equation.
 
 <img width="261" height="19" alt="1sjltph8xvsqu" src="https://github.com/user-attachments/assets/6d378e3b-4696-4a2a-8604-5c11bb98da27" />
-![1sjltph8xvsqu](img/1sjltph8xvsqu.png)
-<img width="261" height="19" alt="1sjltph8xvsqu" src="https://github.com/user-attachments/assets/7d00b9ab-ebae-492c-b44e-58e3eec46d56" />
+<img width="261" height="19" alt="1sjltph8xvsqu" src="https://github.com/user-attachments/assets/8ed2d8d9-7132-4059-8b76-cd56682df4e2" />
+
 
 
 solves a TBA and returns the value of the solution.
 
 <img width="320" height="21" alt="0dspcpaupt2ma" src="https://github.com/user-attachments/assets/33711a2c-7b78-4479-89f8-2790e6e9fd8f" />
-![0dspcpaupt2ma](img/0dspcpaupt2ma.png)
-<img width="320" height="21" alt="0dspcpaupt2ma" src="https://github.com/user-attachments/assets/d14d23d4-961a-4b28-b499-d0023775d756" />
+<img width="320" height="21" alt="0dspcpaupt2ma" src="https://github.com/user-attachments/assets/6c157110-3631-452d-bb5b-3ac8773807d0" />
+
 
 
 solves a system of TBA equations.
 
 <img width="391" height="21" alt="0bgvr998muh8s" src="https://github.com/user-attachments/assets/a46d7930-64c2-476b-8834-ea52c128680a" />
-
-![0bgvr998muh8s](img/0bgvr998muh8s.png)
-<img width="391" height="21" alt="0bgvr998muh8s" src="https://github.com/user-attachments/assets/77a29486-c78c-4789-8e47-f661aee3e37f" />
+<img width="391" height="21" alt="0bgvr998muh8s" src="https://github.com/user-attachments/assets/7e057ad5-35c1-4e44-8f21-9b60b9822aaf" />
 
 
 solves a system of TBA equations and returns the specified solutions values.
