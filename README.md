@@ -4,7 +4,7 @@ It can be used to reproduce the results of academic papers such as the one attac
 
 D. Fioravanti, D. Gregori and H.Shu, "Integrability, susy $SU(2)$ matter gauge theories and black holes" [arXiv:2208.14031 [hep-th]](https://arxiv.org/pdf/2208.14031).
 
-Read more about the significance of this work also on a [Wolfram Community post](https://community.wolfram.com/groups/-/m/t/3549711).
+Read more about the overall significance of this work also on a [Wolfram Community post](https://community.wolfram.com/groups/-/m/t/3549711).
 
 # ThermodynamicBetheAnsatzSolve
 
