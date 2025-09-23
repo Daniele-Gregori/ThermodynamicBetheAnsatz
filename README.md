@@ -10,26 +10,22 @@ Solve integral equations of Thermodynamic Bethe Ansatz type
 
 ### Documentation
 
-#### Usage![0m0v5w4n3rqku](img/0m0v5w4n3rqku.png)
+#### Usage
 
-![1fexgolzrtiy0](img/1fexgolzrtiy0.png)
 <img width="246" height="19" alt="1fexgolzrtiy0" src="https://github.com/user-attachments/assets/f074be08-ffff-4e35-8279-04fad464e014" />
 
 solves a TBA equation.
 
-![1sjltph8xvsqu](img/1sjltph8xvsqu.png)
 <img width="261" height="19" alt="1sjltph8xvsqu" src="https://github.com/user-attachments/assets/6d378e3b-4696-4a2a-8604-5c11bb98da27" />
 
 
 solves a TBA and returns the value of the solution.
 
-![0dspcpaupt2ma](img/0dspcpaupt2ma.png)
 <img width="320" height="21" alt="0dspcpaupt2ma" src="https://github.com/user-attachments/assets/33711a2c-7b78-4479-89f8-2790e6e9fd8f" />
 
 
 solves a system of TBA equations.
 
-![0bgvr998muh8s](img/0bgvr998muh8s.png)
 <img width="391" height="21" alt="0bgvr998muh8s" src="https://github.com/user-attachments/assets/a46d7930-64c2-476b-8834-ea52c128680a" />
 
 
@@ -40,8 +36,9 @@ solves a system of TBA equations and returns the specified solutions values.
 The Thermodynamic Bethe Ansatz (TBA) is a type of nonlinear integral equation studied extensively, in recent decades, in various branches of theoretical physics (especially in statistical field theory, quantum integrability and gauge theories).
 
 Mathematically it has the following general form:
-$![1c1h7fjcz5rhw](img/1c1h7fjcz5rhw.png)$,
-where $![1nkdymr8ucgh6](img/1nkdymr8ucgh6.png)$, for $![1x7dftwc32142](img/1x7dftwc32142.png)$ are the dependent variables, $![1qejis9dmn0ec](img/1qejis9dmn0ec.png)$ the non-homogeneous (or forcing) terms, $![0k3vwbth3q578](img/0k3vwbth3q578.png)$ the integral kernels (typically combinations of hyperbolic functions), $![1c7wntyl793lx](img/1c7wntyl793lx.png)$ some constants and $![1m4wg7vh4r5z1](img/1m4wg7vh4r5z1.png)$. Notice that the integral terms are always convolutions.
+<img width="424" height="39" alt="1c1h7fjcz5rhw" src="https://github.com/user-attachments/assets/1b7f294b-1846-493f-83d3-40cc90e8ce8b" />,
+where <img width="33" height="17" alt="1nkdymr8ucgh6" src="https://github.com/user-attachments/assets/890c8ddb-e24e-4379-a27c-02caac9d3c38" />
+ $![1nkdymr8ucgh6](img/1nkdymr8ucgh6.png)$, for $![1x7dftwc32142](img/1x7dftwc32142.png)$ are the dependent variables, $![1qejis9dmn0ec](img/1qejis9dmn0ec.png)$ the non-homogeneous (or forcing) terms, $![0k3vwbth3q578](img/0k3vwbth3q578.png)$ the integral kernels (typically combinations of hyperbolic functions), $![1c7wntyl793lx](img/1c7wntyl793lx.png)$ some constants and $![1m4wg7vh4r5z1](img/1m4wg7vh4r5z1.png)$. Notice that the integral terms are always convolutions.
 
 Due to its quite involved form, the TBA cannot be solved analytically or symbolically through [DSolve](https://reference.wolfram.com/language/ref/DSolve), but requires a special numerical treatment.
 
