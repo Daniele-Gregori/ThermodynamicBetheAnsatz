@@ -1,6 +1,6 @@
 A Wolfram resource function which automatically delivers the numerical solution of integral equations of Thermodynamic Bethe Ansatz type.
 
-The author used it to produce the results in academic papers such as the one attached, which is a revised version of:
+It can be used to reproduce the results of academic papers such as the one attached, which is a revised version of:
 
 D. Fioravanti, D. Gregori and H.Shu, "Integrability, susy $SU(2)$ matter gauge theories and black holes" [arXiv:2208.14031 [hep-th]](https://arxiv.org/pdf/2208.14031).
 
