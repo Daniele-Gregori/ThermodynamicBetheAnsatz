@@ -84,7 +84,7 @@ ThermodynamicBetheAnsatzSolve[tbaSHG /. r -> 0.1]
 Plot the solution:
 
 ```wl
-In[]:= Plot[y[x] /. %, {x, -5, 5}]
+Plot[y[x] /. %, {x, -5, 5}]
 ```
 <img width="142" height="92" alt="tba_img4" src="https://github.com/user-attachments/assets/c9fa5883-875d-4f8a-9675-a49c05d1e489" />
 
