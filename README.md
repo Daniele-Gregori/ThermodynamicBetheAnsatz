@@ -4,7 +4,7 @@ It can be used to reproduce the results of academic papers such as the one attac
 
 D. Fioravanti, D. Gregori and H.Shu, "Integrability, susy $SU(2)$ matter gauge theories and black holes" [arXiv:2208.14031 [hep-th]](https://arxiv.org/pdf/2208.14031).
 
-Read more about the overall significance of this work also on a [Wolfram Community](https://community.wolfram.com) computational essay:
+Read more about the overall significance of this work also in a computational essay on the [Wolfram Community](https://community.wolfram.com):
 
 [Resource function for the numerical solution of certain nonlinear integral equations](https://community.wolfram.com/groups/-/m/t/3549711)
 
