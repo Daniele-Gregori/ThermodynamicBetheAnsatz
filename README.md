@@ -6,9 +6,12 @@ D. Fioravanti, D. Gregori and H.Shu, "Integrability, susy $SU(2)$ matter gauge t
 
 Read more about the overall significance of this work also on a [Wolfram Community post](https://community.wolfram.com/groups/-/m/t/3549711):
 
-[Resource function for the numerical solution of certain nonlinear integral equations](https://community.wolfram.com/groups/-/m/t/3549711)
+Resource function for the numerical solution of certain nonlinear integral equations
+
 by [Daniele Gregori](https://community.wolfram.com/web/dangregori)
+
 Wolfram Community, STAFF PICKS, September 23, 2025
+
 https://community.wolfram.com/groups/-/m/t/3549711
 
 # ThermodynamicBetheAnsatzSolve
