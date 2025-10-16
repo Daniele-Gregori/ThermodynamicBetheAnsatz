@@ -110,8 +110,8 @@ $\star\star\star\star\star\star\star\star\star\star$
   \def\th{\theta}
  \def \L {\Lambda}
  \usepackage[spanish,english]{babel}
-\usepackage[latin1]{inputenc} 
-%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc} 
+\usepackage[utf8]{inputenc}
 \usepackage{comment}
 \usepackage{xcolor}
 \numberwithin{figure}{section}
@@ -119,9 +119,12 @@ $\star\star\star\star\star\star\star\star\star\star$
 
 \setcounter{tocdepth}{2}
 
+\usepackage{changepage}
+
 \begin{document}
 
 \begin{titlepage}
+\begin{adjustwidth}{1.25cm}{1.25cm}
 \begin{flushright}
 %NORDITA 2021-??? \\
 %???,  2020
@@ -143,14 +146,20 @@ Universit\`a di Bologna} \\
 $^{c}$ Yau Mathematical Sciences Center (YMSC), Tsinghua University, Beijing, 100084, China}\\
 {\texttt{shuphy124 .at. gmail.com}}
 
-\vskip 3.0em
+\vskip 4.0em
+%\let\clearpage\relax
+\textbf{Abstract}\\
+\vskip 1.0em
+   % \rule{\linewidth}{0.5pt}\\[1cm]
+    
 \end{center}
-\begin{abstract}
-We show that previous correspondence between some (integrable) statistical field theory quantities and periods of $SU(2)$ $\mathcal{N}=2$ deformed gauge theory still holds if we add $N_f=1,2$ flavours of matter. Moreover, the correspondence entails a new non-perturbative solution to the theory. Eventually, we use this solution to give exact results on quasinormal modes of black branes and holes.
-\end{abstract}
+    %\rule{\linewidth}{0.5pt}\\
+    We show that previous correspondence between some (integrable) statistical field theory quantities and periods of $SU(2)$ $\mathcal{N}=2$ deformed gauge theory still holds if we add $N_f=1,2$ flavours of matter. Moreover, the correspondence entails a new non-perturbative solution to the theory. Eventually, we use this solution to give exact results on quasinormal modes of black branes and holes.
+    \vfill
+   \end{adjustwidth}
 \end{titlepage}
  
-
+%\clearpage
 
 \tableofcontents
 
@@ -1258,7 +1267,7 @@ Relations~\eqref{gauint1}-\eqref{gauint2} show a new connection between the $SU(
 
 %We observe the RHS of \eqref{gauint1} and~\eqref{gauint2} are expressions for a $N_f=1,2$ SW exact central charge. 
 
-We conclude this section with some observations. The RHS of \eqref{gauint1} and~\eqref{gauint2} are expressions for a $N_f=1,2$ SW exact central charge. As explained in appendix~\ref{appProof} by considering different particles in the spectrum, different relations could be found (like those for the $N_f=0$ and $N_f=1$ theory in~\cite{GrassiGuMarino,GrassiHaoNeitzke:2021}). Besides, we remark that these gauge-integrability identifications hold as they are written only in a restricted strip of of the complex $\th$ plane: $\Im \th<\pi/3$ and $\Im \th < \pi/2 $ for the $N_f=1$ and $N_f=2$ theory. Beyond such strips the gauge TBAs~\eqref{ga-TBA}~\eqref{ga-TBA2} requires analytic continuation (of its solution) since poles of the kernels are found on the $\th'$ integrating axis. A modification of TBA equations, as usually done in integrability by adding the residue, is possible, but then the $Y$s no longer identifies with the gauge periods: in fact the former are entire functions while the latter are not~\cite{DestriDeVega:1997,CecottiDelZotto:2014,ItoMarinoShu:2018}. A similar singular behaviour is found using the $y$ integral definition of gauge periods, as explained in appendix~\ref{appProof}. This is a manifestation of the so-called wall-crossing phenomenon, whereby the spectrum of SW theory changes and therefore a fundamental change in its relation to integrability is to be expected. We hope to investigate further on this issue in the future.
+We conclude this section with some observations. The RHS of \eqref{gauint1} and~\eqref{gauint2} are expressions for a $N_f=1,2$ SW exact central charge. As explained in appendix~\ref{appProof} by considering different particles in the spectrum, different relations could be found (like those for the $N_f=0$ and $N_f=1$ theory in~\cite{GrassiGuMarino,GrassiHaoNeitzke:2021}). Besides, we remark that these gauge-integrability identifications hold as they are written only in a restricted strip of of the complex $\th$ plane: $\Im \th<\pi/3$ and $\Im \th < \pi/2 $ for the $N_f=1$ and $N_f=2$ theory. Beyond such strips the gauge TBAs~\eqref{ga-TBA}~\eqref{ga-TBA2} requires analytic continuation (of its solution) since poles of the kernels are found on the $\th'$ integrating axis. A modification of TBA equations, as usually done in integrability by adding the residue, is possible, but then the $Y$s no longer identifies with the gauge periods: in fact the former are entire functions while the latter are not~\cite{Fioravanti-DDV-1996,DestriDeVega:1997,CecottiDelZotto:2014,ItoMarinoShu:2018}. A similar singular behaviour is found using the $y$ integral definition of gauge periods, as explained in appendix~\ref{appProof}. This is a manifestation of the so-called wall-crossing phenomenon, whereby the spectrum of SW theory changes and therefore a fundamental change in its relation to integrability is to be expected. We hope to investigate further on this issue in the future.
 
 
 
@@ -2989,9 +2998,522 @@ y_2 = - \th_2 + \th_1 + y_1 \qquad \th_2 \to - \infty \qquad M_2 = \frac{1}{2} e
 \ee
 
 
-\newpage
-\bibliographystyle{elsarticle-harv}
-\bibliography{BIBLIOGRAPHY}
+%\newpage
+\bibliographystyle{elsarticle-num}
+
+%\bibliography{BIBLIOGRAPHY}
+
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{SeibergWitten:1994pure}
+N.~Seiberg, E.~Witten, {Electric - magnetic duality, monopole condensation, and
+  confinement in N=2 supersymmetric Yang-Mills theory}, Nucl. Phys. B 426
+  (1994) 19--52, [Erratum: Nucl.Phys.B 430, 485--486 (1994)].
+\newblock \href {http://arxiv.org/abs/hep-th/9407087}
+  {\path{arXiv:hep-th/9407087}}, \href
+  {https://doi.org/10.1016/0550-3213(94)90124-4}
+  {\path{doi:10.1016/0550-3213(94)90124-4}}.
+
+\bibitem{SeibergWitten:1994QCD}
+N.~Seiberg, E.~Witten, {Monopoles, duality and chiral symmetry breaking in N=2
+  supersymmetric QCD}, Nucl. Phys. B 431 (1994) 484--550.
+\newblock \href {http://arxiv.org/abs/hep-th/9408099}
+  {\path{arXiv:hep-th/9408099}}, \href
+  {https://doi.org/10.1016/0550-3213(94)90214-3}
+  {\path{doi:10.1016/0550-3213(94)90214-3}}.
+
+\bibitem{ADHM}
+M.~F. Atiyah, N.~J. Hitchin, V.~G. Drinfeld, Y.~I. Manin, {Construction of
+  Instantons}, Phys. Lett. A 65 (1978) 185--187.
+\newblock \href {https://doi.org/10.1016/0375-9601(78)90141-X}
+  {\path{doi:10.1016/0375-9601(78)90141-X}}.
+
+\bibitem{Flume:2002az}
+R.~Flume, R.~Poghossian, {An Algorithm for the microscopic evaluation of the
+  coefficients of the Seiberg-Witten prepotential}, Int. J. Mod. Phys. A 18
+  (2003) 2541.
+\newblock \href {http://arxiv.org/abs/hep-th/0208176}
+  {\path{arXiv:hep-th/0208176}}, \href
+  {https://doi.org/10.1142/S0217751X03013685}
+  {\path{doi:10.1142/S0217751X03013685}}.
+
+\bibitem{Nekrasov2003}
+N.~Nekrasov, {Seiberg-Witten prepotential from instanton counting}, Adv. Theor.
+  Math. Phys. 7 (2004) 831.
+\newblock \href {http://arxiv.org/abs/hep-th/0306211}
+  {\path{arXiv:hep-th/0306211}}.
+
+\bibitem{NekrasovOkounkov:2003}
+N.~Nekrasov, A.~Okounkov, {Seiberg-Witten theory and random partitions}, Prog.
+  Math. 244 (2006) 525--596.
+\newblock \href {http://arxiv.org/abs/hep-th/0306238}
+  {\path{arXiv:hep-th/0306238}}, \href
+  {https://doi.org/10.1007/0-8176-4467-9_15}
+  {\path{doi:10.1007/0-8176-4467-9_15}}.
+
+\bibitem{NekrasovOkounkov2006}
+N.~Nekrasov, A.~Okounkov, {Seiberg-Witten theory and random partitions}, Prog.
+  Math. 244 (2006) 525--596.
+\newblock \href {http://arxiv.org/abs/hep-th/0306238}
+  {\path{arXiv:hep-th/0306238}}, \href
+  {https://doi.org/10.1007/0-8176-4467-9_15}
+  {\path{doi:10.1007/0-8176-4467-9_15}}.
+
+\bibitem{NekrasovShatashvili:2009}
+N.~A. Nekrasov, S.~L. Shatashvili, {Quantization of Integrable Systems and Four
+  Dimensional Gauge Theories}, in: {16th International Congress on Mathematical
+  Physics}, 2009.
+\newblock \href {http://arxiv.org/abs/0908.4052} {\path{arXiv:0908.4052}},
+  \href {https://doi.org/10.1142/9789814304634_0015}
+  {\path{doi:10.1142/9789814304634_0015}}.
+
+\bibitem{MironovMorozov:2009}
+A.~Mironov, A.~Morozov, {Nekrasov Functions and Exact Bohr-Sommerfeld
+  Integrals}, JHEP 04 (2010) 040.
+\newblock \href {http://arxiv.org/abs/0910.5670} {\path{arXiv:0910.5670}},
+  \href {https://doi.org/10.1007/JHEP04(2010)040}
+  {\path{doi:10.1007/JHEP04(2010)040}}.
+
+\bibitem{BasarDunne:2015}
+G.~Basar, G.~V. Dunne, {Resurgence and the Nekrasov-Shatashvili limit:
+  connecting weak and strong coupling in the Mathieu and Lamé systems}, JHEP
+  02 (2015) 160.
+\newblock \href {http://arxiv.org/abs/1501.05671} {\path{arXiv:1501.05671}},
+  \href {https://doi.org/10.1007/JHEP02(2015)160}
+  {\path{doi:10.1007/JHEP02(2015)160}}.
+
+\bibitem{Kashani-PoorTroost:2015}
+A.-K. Kashani-Poor, J.~Troost, {Pure $ \mathcal{N}=2 $ super Yang-Mills and
+  exact WKB}, JHEP 08 (2015) 160.
+\newblock \href {http://arxiv.org/abs/1504.08324} {\path{arXiv:1504.08324}},
+  \href {https://doi.org/10.1007/JHEP08(2015)160}
+  {\path{doi:10.1007/JHEP08(2015)160}}.
+
+\bibitem{ItoKannoOkubo:2017}
+K.~Ito, S.~Kanno, T.~Okubo, {Quantum periods and prepotential in $
+  \mathcal{N}=2 $ SU(2) SQCD}, JHEP 08 (2017) 065.
+\newblock \href {http://arxiv.org/abs/1705.09120} {\path{arXiv:1705.09120}},
+  \href {https://doi.org/10.1007/JHEP08(2017)065}
+  {\path{doi:10.1007/JHEP08(2017)065}}.
+
+\bibitem{GrassiGuMarino}
+A.~Grassi, J.~Gu, M.~Mari\~no, {Non-perturbative approaches to the quantum
+  Seiberg-Witten curve}, JHEP 07 (2020) 106.
+\newblock \href {http://arxiv.org/abs/1908.07065} {\path{arXiv:1908.07065}},
+  \href {https://doi.org/10.1007/JHEP07(2020)106}
+  {\path{doi:10.1007/JHEP07(2020)106}}.
+
+\bibitem{GrassiHaoNeitzke:2021}
+A.~Grassi, Q.~Hao, A.~Neitzke, {Exact WKB methods in SU(2) N$_{f}$ = 1}, JHEP
+  01 (2022) 046.
+\newblock \href {http://arxiv.org/abs/2105.03777} {\path{arXiv:2105.03777}},
+  \href {https://doi.org/10.1007/JHEP01(2022)046}
+  {\path{doi:10.1007/JHEP01(2022)046}}.
+
+\bibitem{Mussardo:1992}
+G.~Mussardo, {Off critical statistical models: Factorized scattering theories
+  and bootstrap program}, Phys. Rept. 218 (1992) 215--379.
+\newblock \href {https://doi.org/10.1016/0370-1573(92)90047-4}
+  {\path{doi:10.1016/0370-1573(92)90047-4}}.
+
+\bibitem{DoreyTateo1998}
+P.~Dorey, R.~Tateo, {Anharmonic oscillators, the thermodynamic Bethe ansatz,
+  and nonlinear integral equations}, J. Phys. A32 (1999) L419--L425.
+\newblock \href {http://arxiv.org/abs/hep-th/9812211}
+  {\path{arXiv:hep-th/9812211}}, \href
+  {https://doi.org/10.1088/0305-4470/32/38/102}
+  {\path{doi:10.1088/0305-4470/32/38/102}}.
+
+\bibitem{BazhanovLukyanovZamolodchikov2001}
+V.~Bazhanov, S.~Lukyanov, A.~Zamolodchikov, {Spectral determinants for
+  Schroedinger equation and Q-operators of Conformal Field Theory},
+  J.Stat.Phys. 102 (1999) 567--576.
+\newblock \href {http://arxiv.org/abs/9812247} {\path{arXiv:9812247}}.
+
+\bibitem{FioravantiGregori:2019}
+D.~Fioravanti, D.~Gregori, {Integrability and cycles of deformed ${\cal N}=2$
+  gauge theory}, Phys. Lett. B 804 (2020) 135376.
+\newblock \href {http://arxiv.org/abs/1908.08030} {\path{arXiv:1908.08030}},
+  \href {https://doi.org/10.1016/j.physletb.2020.135376}
+  {\path{doi:10.1016/j.physletb.2020.135376}}.
+
+\bibitem{DoreyTateo1999}
+P.~Dorey, R.~Tateo, {On the relation between Stokes multipliers and the T-Q
+  systems of conformal field theory}, Nucl.Phys. B 563 (1999) 573--602.
+\newblock \href {http://arxiv.org/abs/9906219} {\path{arXiv:9906219}}.
+
+\bibitem{Zamolodchikov:2000}
+A.~B. Zamolodchikov, {On the thermodynamic Bethe ansatz equation in sinh-Gordon
+  model}, J. Phys. A39 (2006) 12863--12887.
+\newblock \href {http://arxiv.org/abs/hep-th/0005181}
+  {\path{arXiv:hep-th/0005181}}, \href
+  {https://doi.org/10.1088/0305-4470/39/41/S09}
+  {\path{doi:10.1088/0305-4470/39/41/S09}}.
+
+\bibitem{ZamolodchikovMemorial}
+A.~Zamolodchikov, {Quantum Field Theories in two dimensions: Collected works of
+  Alexei Zamolodchikov - Generalized Mathieu Equation and Liouville TBA},
+  Vol.~2, World Scientific, 2012.
+
+\bibitem{FioravantiRossiShu:2020}
+D.~Fioravanti, M.~Rossi, H.~Shu, {$QQ$-system and non-linear integral equations
+  for scattering amplitudes at strong coupling}, JHEP 12 (2020) 086.
+\newblock \href {http://arxiv.org/abs/2004.10722} {\path{arXiv:2004.10722}},
+  \href {https://doi.org/10.1007/JHEP12(2020)086}
+  {\path{doi:10.1007/JHEP12(2020)086}}.
+
+\bibitem{FioravantiRossi:2021}
+D.~Fioravanti, M.~Rossi, {On the origin of the correspondence between classical
+  and quantum integrable theories}, Phys. Lett. B 838 (2023) 137706.
+\newblock \href {http://arxiv.org/abs/2106.07600} {\path{arXiv:2106.07600}},
+  \href {https://doi.org/10.1016/j.physletb.2023.137706}
+  {\path{doi:10.1016/j.physletb.2023.137706}}.
+
+\bibitem{GaiottoMooreNeitzke:2008}
+D.~Gaiotto, G.~W. Moore, A.~Neitzke, {Four-dimensional wall-crossing via
+  three-dimensional field theory}, Commun. Math. Phys. 299 (2010) 163--224.
+\newblock \href {http://arxiv.org/abs/0807.4723} {\path{arXiv:0807.4723}},
+  \href {https://doi.org/10.1007/s00220-010-1071-2}
+  {\path{doi:10.1007/s00220-010-1071-2}}.
+
+\bibitem{GaiottoMooreNeitzke:2009}
+D.~Gaiotto, G.~W. Moore, A.~Neitzke, {Wall-crossing, Hitchin systems, and the
+  WKB approximation}, Adv. Math. 234 (2013) 239--403.
+\newblock \href {http://arxiv.org/abs/0907.3987} {\path{arXiv:0907.3987}},
+  \href {https://doi.org/10.1016/j.aim.2012.09.027}
+  {\path{doi:10.1016/j.aim.2012.09.027}}.
+
+\bibitem{GaiottoOpers}
+D.~Gaiotto, {Opers and TBA} (2014).
+\newblock \href {http://arxiv.org/abs/1403.6137} {\path{arXiv:1403.6137}}.
+
+\bibitem{FioravantiPoghossian:2019}
+D.~Fioravanti, H.~Poghosyan, R.~Poghossian, {$T$, $Q$ and periods in $SU(3)$
+  ${\cal N}=2$ SYM}, JHEP 03 (2020) 049.
+\newblock \href {http://arxiv.org/abs/1909.11100} {\path{arXiv:1909.11100}},
+  \href {https://doi.org/10.1007/JHEP03(2020)049}
+  {\path{doi:10.1007/JHEP03(2020)049}}.
+
+\bibitem{AminovGrassiHatsuda:2020}
+G.~Aminov, A.~Grassi, Y.~Hatsuda, {Black Hole Quasinormal Modes and
+  Seiberg\textendash{}Witten Theory}, Annales Henri Poincare 23~(6) (2022)
+  1951--1977.
+\newblock \href {http://arxiv.org/abs/2006.06111} {\path{arXiv:2006.06111}},
+  \href {https://doi.org/10.1007/s00023-021-01137-x}
+  {\path{doi:10.1007/s00023-021-01137-x}}.
+
+\bibitem{BianchiConsoliGrilloMorales:2021}
+M.~Bianchi, D.~Consoli, A.~Grillo, J.~F. Morales, {QNMs of branes, BHs and
+  fuzzballs from quantum SW geometries}, Phys. Lett. B 824 (2022) 136837.
+\newblock \href {http://arxiv.org/abs/2105.04245} {\path{arXiv:2105.04245}},
+  \href {https://doi.org/10.1016/j.physletb.2021.136837}
+  {\path{doi:10.1016/j.physletb.2021.136837}}.
+
+\bibitem{BonelliIossaLichtigTanzini:2021}
+G.~Bonelli, C.~Iossa, D.~P. Lichtig, A.~Tanzini, {Exact solution of Kerr black
+  hole perturbations via CFT2 and instanton counting: Greybody factor,
+  quasinormal modes, and Love numbers}, Phys. Rev. D 105~(4) (2022) 044047.
+\newblock \href {http://arxiv.org/abs/2105.04483} {\path{arXiv:2105.04483}},
+  \href {https://doi.org/10.1103/PhysRevD.105.044047}
+  {\path{doi:10.1103/PhysRevD.105.044047}}.
+
+\bibitem{BianchiConsoliGrilloMorales:2021b}
+M.~Bianchi, D.~Consoli, A.~Grillo, J.~F. Morales, {More on the SW-QNM
+  correspondence}, JHEP 01 (2022) 024.
+\newblock \href {http://arxiv.org/abs/2109.09804} {\path{arXiv:2109.09804}},
+  \href {https://doi.org/10.1007/JHEP01(2022)024}
+  {\path{doi:10.1007/JHEP01(2022)024}}.
+
+\bibitem{AldayGaiottoTachikawa:2010}
+L.~F. Alday, D.~Gaiotto, Y.~Tachikawa, {Liouville Correlation Functions from
+  Four-dimensional Gauge Theories}, Lett. Math. Phys. 91 (2010) 167--197.
+\newblock \href {http://arxiv.org/abs/0906.3219} {\path{arXiv:0906.3219}},
+  \href {https://doi.org/10.1007/s11005-010-0369-5}
+  {\path{doi:10.1007/s11005-010-0369-5}}.
+
+\bibitem{Gaiotto:2009}
+D.~Gaiotto, {Asymptotically free $\mathcal{N} = 2$ theories and irregular
+  conformal blocks}, J. Phys. Conf. Ser. 462~(1) (2013) 012014.
+\newblock \href {http://arxiv.org/abs/0908.0307} {\path{arXiv:0908.0307}},
+  \href {https://doi.org/10.1088/1742-6596/462/1/012014}
+  {\path{doi:10.1088/1742-6596/462/1/012014}}.
+
+\bibitem{BonelliIossaLichtigTanzini:2022}
+G.~Bonelli, C.~Iossa, D.~Panea~Lichtig, A.~Tanzini, {Irregular Liouville
+  Correlators and Connection Formulae for Heun Functions}, Commun. Math. Phys.
+  397~(2) (2023) 635--727.
+\newblock \href {http://arxiv.org/abs/2201.04491} {\path{arXiv:2201.04491}},
+  \href {https://doi.org/10.1007/s00220-022-04497-5}
+  {\path{doi:10.1007/s00220-022-04497-5}}.
+
+\bibitem{ConsoliFucitoMoralesPoghossian:2022}
+D.~Consoli, F.~Fucito, J.~F. Morales, R.~Poghossian, {CFT description of BHs
+  and ECOs: QNMs, superradiance, echoes and tidal responses}, JHEP 12 (2022)
+  115.
+\newblock \href {http://arxiv.org/abs/2206.09437} {\path{arXiv:2206.09437}},
+  \href {https://doi.org/10.1007/JHEP12(2022)115}
+  {\path{doi:10.1007/JHEP12(2022)115}}.
+
+\bibitem{Hatsuda:2020Teukolsky}
+Y.~Hatsuda, {An alternative to the Teukolsky equation}, Gen. Rel. Grav. 53~(10)
+  (2021) 93.
+\newblock \href {http://arxiv.org/abs/2007.07906} {\path{arXiv:2007.07906}},
+  \href {https://doi.org/10.1007/s10714-021-02866-4}
+  {\path{doi:10.1007/s10714-021-02866-4}}.
+
+\bibitem{CasalsCosta:2021}
+M.~Casals, R.~T. da~Costa, {Hidden Spectral Symmetries and Mode Stability of
+  Subextremal Kerr(-de Sitter) Black Holes}, Commun. Math. Phys. 394~(2) (2022)
+  797--832.
+\newblock \href {http://arxiv.org/abs/2105.13329} {\path{arXiv:2105.13329}},
+  \href {https://doi.org/10.1007/s00220-022-04410-0}
+  {\path{doi:10.1007/s00220-022-04410-0}}.
+
+\bibitem{NakajimaLin:2021}
+H.~Nakajima, W.~Lin, {New Chandrasekhar transformation in Kerr spacetime},
+  Phys. Rev. D 105~(6) (2022) 064036.
+\newblock \href {http://arxiv.org/abs/2111.05857} {\path{arXiv:2111.05857}},
+  \href {https://doi.org/10.1103/PhysRevD.105.064036}
+  {\path{doi:10.1103/PhysRevD.105.064036}}.
+
+\bibitem{BianchiDiRusso:2022}
+M.~Bianchi, G.~Di~Russo, {Turning rotating D-branes and black holes inside out
+  their photon-halo}, Phys. Rev. D 106~(8) (2022) 086009.
+\newblock \href {http://arxiv.org/abs/2203.14900} {\path{arXiv:2203.14900}},
+  \href {https://doi.org/10.1103/PhysRevD.106.086009}
+  {\path{doi:10.1103/PhysRevD.106.086009}}.
+
+\bibitem{DodelsonGrassiIossaLichtigZhiboedov:2022}
+M.~Dodelson, A.~Grassi, C.~Iossa, D.~Panea~Lichtig, A.~Zhiboedov, {Holographic
+  thermal correlators from supersymmetric instantons}, SciPost Phys. 14~(5)
+  (2023) 116.
+\newblock \href {http://arxiv.org/abs/2206.07720} {\path{arXiv:2206.07720}},
+  \href {https://doi.org/10.21468/SciPostPhys.14.5.116}
+  {\path{doi:10.21468/SciPostPhys.14.5.116}}.
+
+\bibitem{Mayerson:2020}
+D.~R. Mayerson, {Fuzzballs and Observations}, Gen. Rel. Grav. 52~(12) (2020)
+  115.
+\newblock \href {http://arxiv.org/abs/2010.09736} {\path{arXiv:2010.09736}},
+  \href {https://doi.org/10.1007/s10714-020-02769-w}
+  {\path{doi:10.1007/s10714-020-02769-w}}.
+
+\bibitem{LIGOScientific:2016}
+B.~P. Abbott, et~al., {Observation of Gravitational Waves from a Binary Black
+  Hole Merger}, Phys. Rev. Lett. 116~(6) (2016) 061102.
+\newblock \href {http://arxiv.org/abs/1602.03837} {\path{arXiv:1602.03837}},
+  \href {https://doi.org/10.1103/PhysRevLett.116.061102}
+  {\path{doi:10.1103/PhysRevLett.116.061102}}.
+
+\bibitem{CardosoPani:2017}
+V.~Cardoso, P.~Pani, {Tests for the existence of black holes through
+  gravitational wave echoes}, Nature Astron. 1~(9) (2017) 586--591.
+\newblock \href {http://arxiv.org/abs/1709.01525} {\path{arXiv:1709.01525}},
+  \href {https://doi.org/10.1038/s41550-017-0225-y}
+  {\path{doi:10.1038/s41550-017-0225-y}}.
+
+\bibitem{FioravantiGregori:2021}
+D.~Fioravanti, D.~Gregori, {A new method for exact results on Quasinormal Modes
+  of Black Holes} (12 2021).
+\newblock \href {http://arxiv.org/abs/2112.11434} {\path{arXiv:2112.11434}}.
+
+\bibitem{Nollert:1999}
+H.-P. Nollert, \href{https://doi.org/10.1088/0264-9381/16/12/201}{Quasinormal
+  modes: the characteristic sound of black holes and neutron stars}, Classical
+  and Quantum Gravity 16~(12) (1999) R159--R216.
+\newblock \href {https://doi.org/10.1088/0264-9381/16/12/201}
+  {\path{doi:10.1088/0264-9381/16/12/201}}.
+\newline\urlprefix\url{https://doi.org/10.1088/0264-9381/16/12/201}
+
+\bibitem{Ronveaux:1995}
+A.~Ronveaux, {Heun's Differential Equations}, Oxford University Press, 1995.
+
+\bibitem{FateevLukyanov:2005}
+V.~A. Fateev, S.~L. Lukyanov, {Boundary RG flow associated with the AKNS
+  soliton hierarchy}, J. Phys. A 39 (2006) 12889--12926.
+\newblock \href {http://arxiv.org/abs/hep-th/0510271}
+  {\path{arXiv:hep-th/0510271}}, \href
+  {https://doi.org/10.1088/0305-4470/39/41/S10}
+  {\path{doi:10.1088/0305-4470/39/41/S10}}.
+
+\bibitem{Zamolodchikov:1991}
+A.~B. Zamolodchikov, {On the thermodynamic Bethe ansatz equations for
+  reflectionless ADE scattering theories}, Phys. Lett. B 253 (1991) 391--394.
+\newblock \href {https://doi.org/10.1016/0370-2693(91)91737-G}
+  {\path{doi:10.1016/0370-2693(91)91737-G}}.
+
+\bibitem{FabbriFioravantiPiscagliaTateo:2013}
+A.~Fabbri, D.~Fioravanti, S.~Piscaglia, R.~Tateo, {Exact results for the low
+  energy $AdS_4$ x $\mathbb{CP}^3$ string theory}, JHEP 11 (2013) 073.
+\newblock \href {http://arxiv.org/abs/1308.1861} {\path{arXiv:1308.1861}},
+  \href {https://doi.org/10.1007/JHEP11(2013)073}
+  {\path{doi:10.1007/JHEP11(2013)073}}.
+
+\bibitem{KlassenMelzer2:1990}
+T.~R. Klassen, E.~Melzer, {The Thermodynamics of purely elastic scattering
+  theories and conformal perturbation theory}, Nucl. Phys. B 350 (1991)
+  635--689.
+\newblock \href {https://doi.org/10.1016/0550-3213(91)90159-U}
+  {\path{doi:10.1016/0550-3213(91)90159-U}}.
+
+\bibitem{BilalFerrari-massive:1997}
+A.~Bilal, F.~Ferrari, {The BPS spectra and superconformal points in massive N=2
+  supersymmetric QCD}, Nucl. Phys. B 516 (1998) 175--228.
+\newblock \href {http://arxiv.org/abs/hep-th/9706145}
+  {\path{arXiv:hep-th/9706145}}, \href
+  {https://doi.org/10.1016/S0550-3213(98)00052-2}
+  {\path{doi:10.1016/S0550-3213(98)00052-2}}.
+
+\bibitem{BilalFerrariQCD:1996}
+A.~Bilal, F.~Ferrari, {Curves of marginal stability, and weak and strong
+  coupling BPS spectra in N=2 supersymmetric QCD}, Nucl. Phys. B 480 (1996)
+  589--622.
+\newblock \href {http://arxiv.org/abs/hep-th/9605101}
+  {\path{arXiv:hep-th/9605101}}, \href
+  {https://doi.org/10.1016/S0550-3213(96)00480-4}
+  {\path{doi:10.1016/S0550-3213(96)00480-4}}.
+
+\bibitem{Ferrari:1996de}
+F.~Ferrari, {Charge fractionization in N=2 supersymmetric QCD}, Phys. Rev.
+  Lett. 78 (1997) 795--798.
+\newblock \href {http://arxiv.org/abs/hep-th/9609101}
+  {\path{arXiv:hep-th/9609101}}, \href
+  {https://doi.org/10.1103/PhysRevLett.78.795}
+  {\path{doi:10.1103/PhysRevLett.78.795}}.
+
+\bibitem{AlvarezGaumeMarinoZamora:1997}
+L.~Alvarez-Gaume, M.~Marino, F.~Zamora, {Softly broken N=2 QCD with massive
+  quark hypermultiplets. 1.}, Int. J. Mod. Phys. A 13 (1998) 403--430.
+\newblock \href {http://arxiv.org/abs/hep-th/9703072}
+  {\path{arXiv:hep-th/9703072}}, \href
+  {https://doi.org/10.1142/S0217751X98000184}
+  {\path{doi:10.1142/S0217751X98000184}}.
+
+\bibitem{Imaizumi:2021}
+K.~Imaizumi, {Quantum periods and TBA equations for $\mathcal{N}=2\ SU(2)\
+  N_f=2$ SQCD with flavor symmetry}, Phys. Lett. B 816 (2021) 136270.
+\newblock \href {http://arxiv.org/abs/2103.02248} {\path{arXiv:2103.02248}},
+  \href {https://doi.org/10.1016/j.physletb.2021.136270}
+  {\path{doi:10.1016/j.physletb.2021.136270}}.
+
+\bibitem{Fioravanti-DDV-1996}
+D.~Fioravanti, A.~Mariottini, E.~Quattrini, F.~Ravanini, {Excited state
+  Destri-De Vega equation for Sine-Gordon and restricted Sine-Gordon models},
+  Phys. Lett. B 390 (1997) 243--251.
+\newblock \href {http://arxiv.org/abs/hep-th/9608091}
+  {\path{arXiv:hep-th/9608091}}, \href
+  {https://doi.org/10.1016/S0370-2693(96)01409-8}
+  {\path{doi:10.1016/S0370-2693(96)01409-8}}.
+
+\bibitem{DestriDeVega:1997}
+C.~Destri, H.~J. de~Vega, {Nonlinear integral equation and excited states
+  scaling functions in the sine-Gordon model}, Nucl. Phys. B 504 (1997)
+  621--664.
+\newblock \href {http://arxiv.org/abs/hep-th/9701107}
+  {\path{arXiv:hep-th/9701107}}, \href
+  {https://doi.org/10.1016/S0550-3213(97)00468-9}
+  {\path{doi:10.1016/S0550-3213(97)00468-9}}.
+
+\bibitem{CecottiDelZotto:2014}
+S.~Cecotti, M.~Del~Zotto, {$Y$ systems, $Q$ systems, and 4D $\mathcal{N}=2$
+  supersymmetric QFT}, J. Phys. A 47~(47) (2014) 474001.
+\newblock \href {http://arxiv.org/abs/1403.7613} {\path{arXiv:1403.7613}},
+  \href {https://doi.org/10.1088/1751-8113/47/47/474001}
+  {\path{doi:10.1088/1751-8113/47/47/474001}}.
+
+\bibitem{ItoMarinoShu:2018}
+K.~Ito, M.~Marino, H.~Shu, {TBA equations and resurgent Quantum Mechanics},
+  JHEP 01 (2019) 228.
+\newblock \href {http://arxiv.org/abs/1811.04812} {\path{arXiv:1811.04812}},
+  \href {https://doi.org/10.1007/JHEP01(2019)228}
+  {\path{doi:10.1007/JHEP01(2019)228}}.
+
+\bibitem{whittaker_watson_1996}
+E.~T. Whittaker, G.~N. Watson, A Course of Modern Analysis, 4th Edition,
+  Cambridge Mathematical Library, Cambridge University Press, 1996.
+\newblock \href {https://doi.org/10.1017/CBO9780511608759}
+  {\path{doi:10.1017/CBO9780511608759}}.
+
+\bibitem{Ikeda:2021}
+T.~Ikeda, M.~Bianchi, D.~Consoli, A.~Grillo, J.~F. Morales, P.~Pani, G.~Raposo,
+  {Black-hole microstate spectroscopy: Ringdown, quasinormal modes, and
+  echoes}, Phys. Rev. D 104~(6) (2021) 066021.
+\newblock \href {http://arxiv.org/abs/2103.10960} {\path{arXiv:2103.10960}},
+  \href {https://doi.org/10.1103/PhysRevD.104.066021}
+  {\path{doi:10.1103/PhysRevD.104.066021}}.
+
+\bibitem{Leaver:1985}
+E.~W. Leaver, {An Analytic representation for the quasi normal modes of Kerr
+  black holes}, Proc. Roy. Soc. Lond. A 402 (1985) 285--298.
+\newblock \href {https://doi.org/10.1098/rspa.1985.0119}
+  {\path{doi:10.1098/rspa.1985.0119}}.
+
+\bibitem{Leaver:1990}
+E.~W. Leaver,
+  \href{https://link.aps.org/doi/10.1103/PhysRevD.41.2986}{Quasinormal modes of
+  reissner-nordstr\"om black holes}, Phys. Rev. D 41 (1990) 2986--2997.
+\newblock \href {https://doi.org/10.1103/PhysRevD.41.2986}
+  {\path{doi:10.1103/PhysRevD.41.2986}}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevD.41.2986}
+
+\bibitem{KumarBannonPribytokRodgers:2020}
+S.~Prem~Kumar, A.~O'Bannon, A.~Pribytok, R.~Rodgers, {Holographic Coulomb
+  branch solitons, quasinormal modes, and black holes}, JHEP 05 (2021) 109.
+\newblock \href {http://arxiv.org/abs/2011.13859} {\path{arXiv:2011.13859}},
+  \href {https://doi.org/10.1007/JHEP05(2021)109}
+  {\path{doi:10.1007/JHEP05(2021)109}}.
+
+\bibitem{BianchiDiRusso:2021}
+M.~Bianchi, G.~Di~Russo, {Turning black holes and D-branes inside out of their
+  photon spheres}, Phys. Rev. D 105~(12) (2022) 126007.
+\newblock \href {http://arxiv.org/abs/2110.09579} {\path{arXiv:2110.09579}},
+  \href {https://doi.org/10.1103/PhysRevD.105.126007}
+  {\path{doi:10.1103/PhysRevD.105.126007}}.
+
+\bibitem{Chen:2010pk}
+H.-Y. Chen, K.~Petunin, {Notes on Wall Crossing and Instanton in Compactified
+  Gauge Theory with Matter}, JHEP 10 (2010) 106.
+\newblock \href {http://arxiv.org/abs/1006.5957} {\path{arXiv:1006.5957}},
+  \href {https://doi.org/10.1007/JHEP10(2010)106}
+  {\path{doi:10.1007/JHEP10(2010)106}}.
+
+\bibitem{Nekrasov:2002}
+N.~A. Nekrasov, {Seiberg-Witten prepotential from instanton counting}, Adv.
+  Theor. Math. Phys. 7~(5) (2003) 831--864.
+\newblock \href {http://arxiv.org/abs/hep-th/0206161}
+  {\path{arXiv:hep-th/0206161}}, \href
+  {https://doi.org/10.4310/ATMP.2003.v7.n5.a4}
+  {\path{doi:10.4310/ATMP.2003.v7.n5.a4}}.
+
+\bibitem{Matone:1995}
+M.~Matone, {Instantons and recursion relations in N=2 SUSY gauge theory}, Phys.
+  Lett. B357 (1995) 342--348.
+\newblock \href {http://arxiv.org/abs/hep-th/9506102}
+  {\path{arXiv:hep-th/9506102}}, \href
+  {https://doi.org/10.1016/0370-2693(95)00920-G}
+  {\path{doi:10.1016/0370-2693(95)00920-G}}.
+
+\bibitem{FlumeFucitoMoralesPoghossian:2004}
+R.~Flume, F.~Fucito, J.~F. Morales, R.~Poghossian, {Matone's relation in the
+  presence of gravitational couplings}, JHEP 04 (2004) 008.
+\newblock \href {http://arxiv.org/abs/hep-th/0403057}
+  {\path{arXiv:hep-th/0403057}}, \href
+  {https://doi.org/10.1088/1126-6708/2004/04/008}
+  {\path{doi:10.1088/1126-6708/2004/04/008}}.
+
+\bibitem{BazhanovLukyanovZamolodchikov:1997}
+V.~Bazhanov, S.~Lukyanov, A.~Zamolodchikov, {Integrable Structure of Conformal
+  Field Theory II. Q-operator and DDV equation}, Commun.Math.Phys. 190 (1997)
+  247--278.
+\newblock \href {http://arxiv.org/abs/9604044} {\path{arXiv:9604044}}.
+
+\end{thebibliography}
+
 
 
 
